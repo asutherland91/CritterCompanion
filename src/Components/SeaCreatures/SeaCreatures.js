@@ -17,9 +17,11 @@ export const SeaCreatures = ({ critters }) => {
     )
   })
   return (
-    <div className="sea-creature-grid">
-      <h2>Sea Creatures</h2>
-      {seaCreatureIcons}
+    <div className="sea-creatures-grid">
+      <h2 className="sea-creatute-title">Sea Creatures</h2>
+      <div className="sea-creatures-wrapper">
+        {seaCreatureIcons}
+      </div> 
     </div>
   )
 }
