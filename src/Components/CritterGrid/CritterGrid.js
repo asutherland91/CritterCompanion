@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./CritterGrid.css";
+import { Form } from "../Form/Form";
 import { Bugs } from "../Bugs/Bugs";
 import { Fish } from "../Fish/Fish";
 import { SeaCreatures } from "../SeaCreatures/SeaCreatures";
@@ -9,6 +10,11 @@ export const CritterGrid = () => {
   const [bugs, setBugs] = useState([]);
   const [fish, setFish] = useState([]);
   const [sea, setSeaCreatures] = useState([]);
+  const [showMissing, setShowMissing] = useState(false);
+  const [showFish, setShowFish] = useState(true);
+  const [showBugs, setShowBugs] = useState(true);
+  const [showSeaCreatures, setShowSeaCreatures] = useState(true);
+  const [sort, setSort] = useState("Default");
   const [errorMsg, setErrorMsg] = useState("");
 
   useEffect(() => {
@@ -52,13 +58,13 @@ export const CritterGrid = () => {
         }
       });
   }, []);
-
-
   return (
     <div className="critter-grid">
-      <Bugs critters={bugs} />
-      <Fish critters={fish}/>
-      <SeaCreatures critters={sea}/>
+      <Form setShowBugs={setShowBugs} setShowFish={setShowFish} 
+      setShowSeaCreatures={setShowSeaCreatures} setShowMissing={setShowMissing} setSort={setSort} />
+      { showBugs && <Bugs critters={bugs} />}
+      { showFish && <Fish critters={fish}/>}
+      { showSeaCreatures && <SeaCreatures critters={sea}/>}
     </div>
   )
 }
