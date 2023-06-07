@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Critters.css';
 import { Icon } from '../Icon/Icon';
-import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types'
 
 export const Critters = ({ critters, type, sort }) => {
@@ -19,16 +18,17 @@ export const Critters = ({ critters, type, sort }) => {
   })
   .map( critter => {
     return (
-      <NavLink className="critter-icon-nav" key={critter.id} to={`${type}/${critter.id}`} >
         <Icon 
+          collected={collected}
+          type={type}
           setCollected={setCollected}
           id={critter.id}
           image={critter.icon_uri}
           name={critter["file-name"]}
         />
-      </NavLink>
     )
   })
+  console.log(collected)
   return (
     <div className="critter-component-grid">
       <h2 className="critter-title">{type}</h2>
