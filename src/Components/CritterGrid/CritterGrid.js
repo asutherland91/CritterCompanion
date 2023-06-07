@@ -5,6 +5,7 @@ import { Bugs } from "../Bugs/Bugs";
 import { Fish } from "../Fish/Fish";
 import { SeaCreatures } from "../SeaCreatures/SeaCreatures";
 import { fetchCritterByType } from "../../APICalls/APICalls";
+import { Critters } from "../Critters/Critters";
 
 export const CritterGrid = () => {
   const [bugs, setBugs] = useState([]);
@@ -62,9 +63,9 @@ export const CritterGrid = () => {
     <div className="critter-grid">
       <Form setShowBugs={setShowBugs} setShowFish={setShowFish} 
       setShowSeaCreatures={setShowSeaCreatures} setShowMissing={setShowMissing} setSort={setSort} />
-      { showBugs && <Bugs critters={bugs} />}
-      { showFish && <Fish critters={fish}/>}
-      { showSeaCreatures && <SeaCreatures critters={sea}/>}
+      { showBugs && <Critters type="Bugs" critters={bugs} />}
+      { showFish && <Critters type="Fish" critters={fish}/>}
+      { showSeaCreatures && <Critters type="Sea Creatures" critters={sea}/>}
     </div>
   )
 }
