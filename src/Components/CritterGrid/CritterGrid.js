@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./CritterGrid.css";
 import { Form } from "../Form/Form";
-import { Bugs } from "../Bugs/Bugs";
-import { Fish } from "../Fish/Fish";
-import { SeaCreatures } from "../SeaCreatures/SeaCreatures";
 import { fetchCritterByType } from "../../APICalls/APICalls";
 import { Critters } from "../Critters/Critters";
 
@@ -26,7 +23,8 @@ export const CritterGrid = () => {
       .catch((error) => {
         if (error instanceof Error) {
           setErrorMsg("Server error.");
-        } else {
+        } 
+        else {
           setErrorMsg("Unknown error.");
         }
       });
@@ -40,7 +38,8 @@ export const CritterGrid = () => {
       .catch((error) => {
         if (error instanceof Error) {
           setErrorMsg("Server error.");
-        } else {
+        } 
+        else {
           setErrorMsg("Unknown error.");
         }
       });
@@ -54,7 +53,8 @@ export const CritterGrid = () => {
       .catch((error) => {
         if (error instanceof Error) {
           setErrorMsg("Server error.");
-        } else {
+        } 
+        else {
           setErrorMsg("Unknown error.");
         }
       });
@@ -63,9 +63,9 @@ export const CritterGrid = () => {
     <div className="critter-grid">
       <Form setShowBugs={setShowBugs} setShowFish={setShowFish} 
       setShowSeaCreatures={setShowSeaCreatures} setShowMissing={setShowMissing} setSort={setSort} />
-      { showBugs && <Critters type="Bugs" critters={bugs} />}
-      { showFish && <Critters type="Fish" critters={fish}/>}
-      { showSeaCreatures && <Critters type="Sea Creatures" critters={sea}/>}
+      { showBugs && <Critters sort={sort} type="Bugs" critters={bugs} />}
+      { showFish && <Critters sort={sort} type="Fish" critters={fish}/>}
+      { showSeaCreatures && <Critters sort={sort} type="Sea Creatures" critters={sea}/>}
     </div>
   )
 }

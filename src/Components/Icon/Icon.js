@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Icon.css";
 import PropTypes from 'prop-types'
 
-export const Icon = ({ id, image, name }) => {
+export const Icon = ({ id, image, name, setCollected }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -27,5 +27,6 @@ export const Icon = ({ id, image, name }) => {
 Icon.propTypes = {
   name: PropTypes.string,
   image: PropTypes.string,
-  id: PropTypes.number
+  id: PropTypes.number,
+  setCollected: PropTypes.func
 }
