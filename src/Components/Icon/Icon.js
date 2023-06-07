@@ -9,9 +9,11 @@ export const Icon = ({ id, image, name }) => {
     setIsClicked(!isClicked);
   };
 
+  let critterName = name.replaceAll("_", ' ')
+
   return(
     <div id={id} className={`icon ${isClicked ? "fade" : ""}`}>
-<h2 className="name">{name}</h2>
+<h2 className="name">{critterName}</h2>
       <div className="image-wrapper">
         <img className="image" src={image} alt={name}/>
       </div>
