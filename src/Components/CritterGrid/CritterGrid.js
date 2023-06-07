@@ -63,9 +63,9 @@ export const CritterGrid = () => {
     <div className="critter-grid">
       <Form setShowBugs={setShowBugs} setShowFish={setShowFish} 
       setShowSeaCreatures={setShowSeaCreatures} setShowMissing={setShowMissing} setSort={setSort} />
-      { showBugs && <Critters sort={sort} type="Bugs" critters={bugs} />}
-      { showFish && <Critters sort={sort} type="Fish" critters={fish}/>}
-      { showSeaCreatures && <Critters sort={sort} type="Sea Creatures" critters={sea}/>}
+      { showBugs && <Critters sort={sort} type="Bugs" showMissing={showMissing} critters={bugs} />}
+      { showFish && <Critters sort={sort} type="Fish" showMissing={showMissing} critters={fish}/>}
+      { showSeaCreatures && <Critters sort={sort} type="Sea Creatures" showMissing={showMissing} critters={sea}/>}
     </div>
   )
 }

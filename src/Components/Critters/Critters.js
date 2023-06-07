@@ -3,9 +3,18 @@ import './Critters.css';
 import { Icon } from '../Icon/Icon';
 import PropTypes from 'prop-types'
 
-export const Critters = ({ critters, type, sort }) => {
+export const Critters = ({ critters, type, sort, showMissing }) => {
   const [collected, setCollected] = useState([]);
-  const critterIcons = critters.toSorted((a, b) => {
+  const critterIcons = critters
+  .filter((critter) => {
+    if(showMissing) {
+      return !collected.includes(critter.id);
+    }
+    else {
+      return true;
+    }
+  })
+  .toSorted((a, b) => {
     if(sort === "Default") {
       return a.id - b.id;
     }
@@ -19,12 +28,14 @@ export const Critters = ({ critters, type, sort }) => {
   .map( critter => {
     return (
         <Icon 
+          key={critter.id}
           collected={collected}
           type={type}
           setCollected={setCollected}
           id={critter.id}
           image={critter.icon_uri}
           name={critter["file-name"]}
+          selected={collected.includes(critter.id)}
         />
     )
   })
@@ -43,4 +54,5 @@ Critters.propTypes = {
   critters: PropTypes.array,
   type: PropTypes.string,
   sort: PropTypes.string,
+  showMissing: PropTypes.bool
 }

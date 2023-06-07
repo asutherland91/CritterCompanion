@@ -3,7 +3,7 @@ import "./Icon.css";
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types'
 
-export const Icon = ({ id, image, name, setCollected, type, collected }) => {
+export const Icon = ({ id, image, name, setCollected, type, collected, selected }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -19,7 +19,7 @@ export const Icon = ({ id, image, name, setCollected, type, collected }) => {
   let critterName = name.replaceAll("_", ' ')
 
   return(
-    <div id={id} className={`icon ${isClicked ? "fade" : ""}`}>
+    <div id={id} className={`icon ${selected ? "fade" : ""}`}>
       <h2 className="name">{critterName}</h2>
       <NavLink className="critter-icon-nav" key={id} to={`${type}/${id}`} >
         <div className="image-wrapper">
@@ -27,7 +27,7 @@ export const Icon = ({ id, image, name, setCollected, type, collected }) => {
         </div>
       </NavLink>
       <button className="collected" onClick={handleClick}>
-        {!isClicked ? "Got It!" : "Don't Got It!"}
+        {!selected ? "Got It!" : "Don't Got It!"}
       </button>
     </div>
   );
@@ -40,4 +40,5 @@ Icon.propTypes = {
   setCollected: PropTypes.func,
   type: PropTypes.string,
   collected: PropTypes.array,
+  selected: PropTypes.bool
 }
