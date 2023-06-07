@@ -1,0 +1,31 @@
+.form {
+  background-color: rgba(255, 255, 255, 0.577);
+  height: 5em;
+  width: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 3em;
+  padding: 2em 2em;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-checkbox-label {
+  margin-bottom: .25em;
+}
+
+.form-checkbox {
+  margin-left: 5px;
+}
+
+.form-sort {
+  margin-left: .5em;
+  border-radius: 4px;
+  padding: .25em
+}
+

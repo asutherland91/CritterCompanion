@@ -3,4 +3,5 @@
   flex-direction: column;
   background-image: url("../../Assets/facebackgrounds.png");
   background-position: center;
+  align-items: center;
  }

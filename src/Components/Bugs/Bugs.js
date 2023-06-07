@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types'
 
 export const Bugs = ({ critters }) => {
-  console.log(critters);
   const bugIcons = critters.map( critter => {
     return (
       <NavLink className="critter-icon-nav" key={critter.id} to={`bug/{critter.id}`} >
