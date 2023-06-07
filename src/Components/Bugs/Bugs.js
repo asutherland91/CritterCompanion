@@ -19,7 +19,7 @@ export const Bugs = ({ critters }) => {
   })
   return (
     <div className="bug-wrapper">
-      <h2>Bugs</h2>
+      <h2 className="bug-title">Bugs</h2>
       <div className="bug-grid">
         {bugIcons}
       </div>

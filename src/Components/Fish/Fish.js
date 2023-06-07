@@ -18,8 +18,10 @@ export const Fish = ({ critters }) => {
   })
   return (
     <div className="fish-grid">
-      <h2>Fish</h2>
-      {fishIcons}
+      <h2 className="fish-title">Fish</h2>
+      <div className="fish-wrapper">
+        {fishIcons}
+      </div>
     </div>
   )
 }
