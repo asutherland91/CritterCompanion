@@ -1,0 +1,38 @@
+
+.details-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(240, 248, 255, 0.782);
+  margin: 1.5em;
+  border-radius: 8px;
+}
+
+.detail-image-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.detail-image {
+  left: 0;
+  margin: 1em 2em;
+  width: 30em;
+  border-radius: 150px;
+}
+
+.details {
+  font-size: 1.5em;
+  margin: 0px;
+}
+
+p {
+  margin: .25em 0em 0em 5em;
+}
+
+.detail-name {
+  text-align: center;
+}
+
+.catch-phrase {
+  text-align:right;
+  margin-right: 1em;
+}
