@@ -3,6 +3,7 @@ import "./CritterGrid.css";
 import { Form } from "../Form/Form";
 import { fetchCritterByType } from "../../APICalls/APICalls";
 import { Critters } from "../Critters/Critters";
+import { cleanCritterData } from "../../APICalls/utilities";
 
 export const CritterGrid = () => {
   const [bugs, setBugs] = useState([]);
@@ -18,7 +19,7 @@ export const CritterGrid = () => {
   useEffect(() => {
     fetchCritterByType("bugs")
       .then((bugsData) => {
-        setBugs(bugsData);
+        setBugs(cleanCritterData(bugsData));
       })
       .catch((error) => {
         if (error instanceof Error) {
@@ -33,7 +34,7 @@ export const CritterGrid = () => {
   useEffect(() => {
     fetchCritterByType("fish")
       .then((fishData) => {
-        setFish(fishData);
+        setFish(cleanCritterData(fishData));
       })
       .catch((error) => {
         if (error instanceof Error) {
@@ -48,7 +49,7 @@ export const CritterGrid = () => {
   useEffect(() => {
     fetchCritterByType("sea")
       .then((seaData) => {
-        setSeaCreatures(seaData);
+        setSeaCreatures(cleanCritterData(seaData));
       })
       .catch((error) => {
         if (error instanceof Error) {
@@ -59,6 +60,7 @@ export const CritterGrid = () => {
         }
       });
   }, []);
+  
   return (
     <div className="critter-grid">
       <Form setShowBugs={setShowBugs} setShowFish={setShowFish} 

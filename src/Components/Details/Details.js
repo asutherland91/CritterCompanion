@@ -3,6 +3,7 @@ import "./Details.css";
 import { fetchSpecificCritter } from "../../APICalls/APICalls";
 import { useParams } from "react-router-dom";
 import PropTypes from 'prop-types'
+import { cleanCritterDetailsData } from "../../APICalls/utilities";
 
 export const Details = () => {
   const { type, id } = useParams();
@@ -13,7 +14,7 @@ export const Details = () => {
   useEffect(() => {
     fetchSpecificCritter(type, id)
       .then((critterData) => {
-        setCritterData(critterData);
+        setCritterData(cleanCritterDetailsData(critterData));
       })
       .catch((error) => {
         if (error instanceof Error) {
