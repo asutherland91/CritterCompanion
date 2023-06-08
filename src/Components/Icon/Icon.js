@@ -21,7 +21,7 @@ export const Icon = ({ id, image, name, setCollected, type, collected, selected 
   return(
     <div id={id} className={`icon ${selected ? "fade" : ""}`}>
       <h2 className="name">{critterName}</h2>
-      <NavLink className="critter-icon-nav" key={id} to={`${type}/${id}`} >
+      <NavLink className="critter-icon-nav" key={id} to={`${type.replaceAll(" ", "")}/${id}`} >
         <div className="image-wrapper">
           <img className="image" src={image} alt={name}/>
         </div>
