@@ -33,9 +33,10 @@ export const Details = () => {
         <div className="detail-image-wrapper">
           <img className="detail-image" src={critter["image_uri"]} alt={critter["file-name"]}/>
           <div className="details">
-            <p>I am found in the {critter.availability.location} </p>
-            <p>I am worth {critter.price} bells </p>
-            <p>I am found in the {critter.location} </p>
+            <p>Location: {critter.availability.location}! </p>
+            <p>Price: {critter.price} Bells! </p>
+            <p>Rarity: {critter.availability.rarity}! </p>
+            <p>Months available: {critter["month-available"]}! </p>
           </div>
         </div>
         <h3 className="catch-phrase">{critter["catch-phrase"]}</h3>
