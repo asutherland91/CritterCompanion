@@ -29,14 +29,17 @@ export const Details = () => {
   if(critter) {
     return (
       <div id={critter.id} className="details-wrapper">
-        <h2 className="name">{critter["file-name"]}</h2>
-        <h3>{critter["catch-phrase"]}</h3>
-          <div className="image-wrapper">
-            <img className="image" src={critter["image_uri"]} alt={critter["file-name"]}/>
+        <h2 className="detail-name">{critter["file-name"]}</h2>
+        <div className="detail-image-wrapper">
+          <img className="detail-image" src={critter["image_uri"]} alt={critter["file-name"]}/>
+          <div className="details">
+            <p>I am found in the {critter.availability.location} </p>
+            <p>I am worth {critter.price} bells </p>
+            <p>I am found in the {critter.location} </p>
           </div>
-          <p>I am found in the {critter.availability.location} </p>
-          <p>I am worth {critter.price} bells </p>
-          <p>I am found in the {critter.location} </p>
+        </div>
+        <h3 className="catch-phrase">{critter["catch-phrase"]}</h3>
+        
       </div>
     );
   }
@@ -45,5 +48,4 @@ export const Details = () => {
       <h1>Loading, yes</h1>
     )
   }
-  
 }
