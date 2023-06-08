@@ -14,3 +14,22 @@
   position: absolute;
   right: 1em;
 }
+
+@media (max-width: 768px) {
+  .logo {
+    margin: .5em .5em;
+    height: 6em;
+    transform: rotate(-13deg);
+  }
+
+  .header {
+    height: 10em;
+    flex-direction: column;
+  }
+
+  .tag-line {
+    position: relative;
+    text-align: center;
+    margin: .5em 0 1em 2em;
+  }
+}
