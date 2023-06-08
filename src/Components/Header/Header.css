@@ -1,0 +1,16 @@
+.logo {
+  margin: 2em 1em;
+  height: 10em;
+  transform: rotate(-13deg);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.tag-line{
+  position: absolute;
+  right: 1em;
+}
