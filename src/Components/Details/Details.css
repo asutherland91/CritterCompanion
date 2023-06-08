@@ -25,11 +25,15 @@
 }
 
 p {
-  margin: .25em 0em 0em 5em;
+  margin: .25em 0em .5em 5em;
+  font-weight: 600;
 }
 
 .detail-name {
   text-align: center;
+  font-size: 2.5em;
+  color: #74664B;
+  text-shadow: 2px 2px 2px #463d2d;
 }
 
 .catch-phrase {
