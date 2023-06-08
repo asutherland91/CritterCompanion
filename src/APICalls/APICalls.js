@@ -16,8 +16,12 @@ export const fetchCritterByType = async (type) => {
     )
   }
 };
+
 export const fetchSpecificCritter = async (type, id) => {
-  if(type === "sea" || type === "bugs" || type ==="fish") {
+  if(type === "SeaCreatures" || type === "Bugs" || type ==="Fish") {
+    if(type === "SeaCreatures") {
+      type = "Sea"
+    }
     const response = await fetch(`https://acnhapi.com/v1a/${type}/${id}`);
     if (response.ok) {
       return await response.json();
