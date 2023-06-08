@@ -23,6 +23,10 @@
   margin-left: 5px;
 }
 
+.form-label {
+  font-size: .95em;
+}
+
 .form-sort {
   margin-left: .5em;
   border-radius: 4px;
