@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Details.css";
 import { fetchSpecificCritter } from "../../APICalls/APICalls";
-import { useParams } from "react-router-dom";
+import { useParams, Redirect } from "react-router-dom";
 import PropTypes from 'prop-types'
 import { cleanCritterDetailsData } from "../../APICalls/utilities";
 
 export const Details = () => {
   const { type, id } = useParams();
   const [critter, setCritterData] = useState();
-  const [errorMsg, setErrorMsg] = useState("");
+  const [error, setError] = useState("");
 
 
   useEffect(() => {
@@ -18,15 +18,18 @@ export const Details = () => {
       })
       .catch((error) => {
         if (error instanceof Error) {
-          setErrorMsg("Server error.");
+          setError("Server error.");
         } 
         else {
-          setErrorMsg("Unknown error.");
+          setError("Unknown error.");
         }
       });
   }, []);
- 
-  if(critter) {
+ if(error) {
+  return(
+    <Redirect to="/error" />
+  )}
+  else if(critter) {
     return (
       <div id={critter.id} className="details-wrapper">
         <h2 className="detail-name">{critter["file-name"]}</h2>
