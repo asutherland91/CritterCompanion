@@ -5,16 +5,19 @@
   background-color: rgba(240, 248, 255, 0.782);
   margin: 1.5em;
   border-radius: 8px;
+  height: 28em;
+  position:relative
 }
 
 .detail-image-wrapper {
   display: flex;
   align-items: center;
+  position: absolute;
+  height: inherit;
 }
 
 .detail-image {
   left: 0;
-  margin: 1em 2em;
   width: 30em;
   border-radius: 150px;
 }
@@ -34,9 +37,48 @@ p {
   font-size: 2.5em;
   color: #74664B;
   text-shadow: 2px 2px 2px #463d2d;
+  margin-bottom: 0;
 }
 
 .catch-phrase {
-  text-align:right;
   margin-right: 1em;
+  position:absolute;
+  bottom: 0;
+  right: 1em;
+}
+
+@media screen and (max-width: 850px) {
+  .details-wrapper {
+    flex-direction: column;
+    position: relative;
+    height: 35em;
+    margin-top: 4em;
+  }
+
+  .detail-image-wrapper {
+    flex-direction: column;
+    position: absolute;
+    height:10em;
+    
+  }
+
+  .detail-image {
+    height: 20em;
+    width: 20em;
+    margin: 0;
+  }
+
+  .details {
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .catch-phrase {
+    position: absolute;
+    bottom: 0;
+    margin-top: 1em;
+  }
 }
