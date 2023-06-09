@@ -3,6 +3,8 @@ import "./CritterGrid.css";
 import { Form } from "../Form/Form";
 import { fetchCritterByType } from "../../APICalls/APICalls";
 import { Critters } from "../Critters/Critters";
+import { Redirect } from "react-router-dom";
+import { cleanCritterData } from "../../APICalls/utilities";
 
 export const CritterGrid = () => {
   const [bugs, setBugs] = useState([]);
@@ -13,19 +15,19 @@ export const CritterGrid = () => {
   const [showBugs, setShowBugs] = useState(true);
   const [showSeaCreatures, setShowSeaCreatures] = useState(true);
   const [sort, setSort] = useState("Default");
-  const [errorMsg, setErrorMsg] = useState("");
+  const [error, setError] = useState("");
 
   useEffect(() => {
     fetchCritterByType("bugs")
       .then((bugsData) => {
-        setBugs(bugsData);
+        setBugs(cleanCritterData(bugsData));
       })
       .catch((error) => {
         if (error instanceof Error) {
-          setErrorMsg("Server error.");
+          setError("Server error.");
         } 
         else {
-          setErrorMsg("Unknown error.");
+          setError("Unknown error.");
         }
       });
   }, []);
@@ -33,14 +35,14 @@ export const CritterGrid = () => {
   useEffect(() => {
     fetchCritterByType("fish")
       .then((fishData) => {
-        setFish(fishData);
+        setFish(cleanCritterData(fishData));
       })
       .catch((error) => {
         if (error instanceof Error) {
-          setErrorMsg("Server error.");
+          setError("Server error.");
         } 
         else {
-          setErrorMsg("Unknown error.");
+          setError("Unknown error.");
         }
       });
   }, []);
@@ -48,24 +50,31 @@ export const CritterGrid = () => {
   useEffect(() => {
     fetchCritterByType("sea")
       .then((seaData) => {
-        setSeaCreatures(seaData);
+        setSeaCreatures(cleanCritterData(seaData));
       })
       .catch((error) => {
         if (error instanceof Error) {
-          setErrorMsg("Server error.");
+          setError("Server error.");
         } 
         else {
-          setErrorMsg("Unknown error.");
+          setError("Unknown error.");
         }
       });
   }, []);
-  return (
-    <div className="critter-grid">
-      <Form setShowBugs={setShowBugs} setShowFish={setShowFish} 
-      setShowSeaCreatures={setShowSeaCreatures} setShowMissing={setShowMissing} setSort={setSort} />
-      { showBugs && <Critters sort={sort} type="Bugs" showMissing={showMissing} critters={bugs} />}
-      { showFish && <Critters sort={sort} type="Fish" showMissing={showMissing} critters={fish}/>}
-      { showSeaCreatures && <Critters sort={sort} type="Sea Creatures" showMissing={showMissing} critters={sea}/>}
-    </div>
-  )
+  
+  if(error) {
+    return(
+      <Redirect to="/error" />
+    )}
+   else {
+    return (
+      <div className="critter-grid">
+        <Form setShowBugs={setShowBugs} setShowFish={setShowFish} 
+        setShowSeaCreatures={setShowSeaCreatures} setShowMissing={setShowMissing} setSort={setSort} />
+        { showBugs && <Critters sort={sort} type="Bugs" showMissing={showMissing} critters={bugs} />}
+        { showFish && <Critters sort={sort} type="Fish" showMissing={showMissing} critters={fish}/>}
+        { showSeaCreatures && <Critters sort={sort} type="Sea Creatures" showMissing={showMissing} critters={sea}/>}
+      </div>
+    )
+   }
 }
