@@ -6,10 +6,14 @@ html, body {
 
 .critter-main {
   background-image: url("../../Assets/facebackgrounds.png");
-  height: 100%;
 }
 
 .details-main {
   background-image: url("../../Assets/lady-red-21.jpg");
-  height: 100vh;
+  height: 100%;
+  background-size: cover;
+}
+
+#root {
+  height: 100%
 }
