@@ -13,3 +13,9 @@ flex-wrap: wrap;
   color: aliceblue;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+@media screen and (max-width: 600px) {
+  .critter-title {
+    margin: .5em;
+  }
+}
