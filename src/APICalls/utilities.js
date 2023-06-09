@@ -21,7 +21,7 @@ export const cleanCritterDetailsData = (critterData) => {
 
 const formatName = (name) => {
   return name
-    .replace("_", " ")
+    .replaceAll("_", " ")
     .split(" ")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
@@ -52,3 +52,7 @@ const formatAvailability = (monthArray) => {
 
   return formattedString;
 };
+
+const formatTime = () => {
+
+}
