@@ -1,6 +1,8 @@
 .image-wrapper {
   border-radius: 100px;
-  background-color: antiquewhite;
+  background-color: #FDF5C4;
+  border: 2px solid #b6b08d;
+  box-shadow: 1px 1px 1px black;
   height: 7em;
   width: 7em;
   }
@@ -17,19 +19,19 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: #8bd5d3;
     height: 13em;
     width: 13em;
     margin: 1em;
     border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
   }
 
   .name {
     font-size: 1em;
     margin-top: .5em;
-    color:aliceblue;
     text-align: center;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #525252;
   }
 
   .collected {
@@ -38,6 +40,8 @@
     margin-top:.5em;
     padding: .5em 1em;
     border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+    font-family: 'Kosugi Maru', sans-serif;
   }
 
   .fade {

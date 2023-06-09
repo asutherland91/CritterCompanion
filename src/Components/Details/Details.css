@@ -30,13 +30,14 @@
 p {
   margin: .25em 0em .5em 5em;
   font-weight: 600;
+  color: #525252;
 }
 
 .detail-name {
   text-align: center;
   font-size: 2.5em;
-  color: #74664B;
-  text-shadow: 2px 2px 2px #463d2d;
+  color: rgb(212, 211, 211);
+  text-shadow: -1px -1px 0 #464646, 1px -1px 0 #464646, -1px 1px 0 #464646, 1px 1px 0 #464646;
   margin-bottom: 0;
 }
 
@@ -45,6 +46,7 @@ p {
   position:absolute;
   bottom: 0;
   right: 1em;
+  color: #525252;
 }
 
 @media screen and (max-width: 850px) {
