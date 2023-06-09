@@ -10,7 +10,9 @@ export const Header = () => {
         <NavLink to="/" className="home">
           <img className="logo" src={logoImage} alt={"Critter Companion home button and logo"}/>
         </NavLink>
-        <h2 className="tag-line">Capture Every Critter: Your Companion in Animal Crossing!</h2>
+        <div className="tag-wrapper">
+          <h2 className="tag-line">Capture Every Critter: Your Companion in Animal Crossing!</h2>
+        </div>
     </header>
   );
 };
