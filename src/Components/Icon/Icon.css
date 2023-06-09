@@ -44,3 +44,25 @@
     opacity: 0.75;
     transition: opacity 0.3s ease-in-out;
   }
+
+  @media (max-width: 600px) {
+    .image-wrapper {
+      height: 6em;
+      width: 6em;
+
+    }
+  
+    .image {
+      height: 6em;
+    }
+  
+    .icon {
+      height: 12em;
+      width: 10.25em;
+      margin: 1em;
+    }
+  
+    .name {
+      font-size: .9em;
+    }
+  }
