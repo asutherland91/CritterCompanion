@@ -14,7 +14,8 @@ export const cleanCritterDetailsData = (critterData) => {
     return {
       ...critterData,
       "file-name": formatName(critterData["file-name"]),
-      "month-available": formatAvailability(critterData.availability["month-array-northern"])
+      "month-available": formatAvailability(critterData.availability["month-array-northern"]),
+      "time-available": formatTime(critterData.availability["time"])
     };
   }
 }
@@ -53,6 +54,11 @@ const formatAvailability = (monthArray) => {
   return formattedString;
 };
 
-const formatTime = () => {
-
+const formatTime = (time) => {
+  if(time === "") {
+    return "All Day"
+  }
+  else {
+    return time;
+  }
 }
