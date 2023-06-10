@@ -13,13 +13,14 @@
 .error-message {
   margin: 9em 0 4em 0;
   font-size: 2em;
-  
 }
 
-.error-message, .go-home {
-  color:aliceblue;
+.error-message,
+.go-home {
+  color: aliceblue;
   text-align: center;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .go-home {
@@ -27,7 +28,7 @@
   font-size: 1.5em;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 5px;
-  padding:1em;
+  padding: 1em;
 }
 
 .go-home:hover {

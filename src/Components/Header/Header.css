@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  height: 14em
+  height: 14em;
 }
 
 .tag-wrapper {
@@ -17,22 +17,23 @@
   position: absolute;
   right: 1em;
   width: 32em;
-  height:13em;
+  height: 13em;
   display: flex;
   align-items: center;
   text-align: center;
   transform: rotate(15deg);
 }
 
-.tag-line{
+.tag-line {
   font-size: 1.5em;
   color: rgb(211, 211, 211);
-  text-shadow: -1px -1px 0 #464646, 1px -1px 0 #464646, -1px 1px 0 #464646, 1px 1px 0 #464646;
+  text-shadow: -1px -1px 0 #464646, 1px -1px 0 #464646, -1px 1px 0 #464646,
+    1px 1px 0 #464646;
 }
 
 @media (max-width: 750px) {
   .logo {
-    margin: .5em .5em;
+    margin: 0.5em 0.5em;
     height: 6em;
     transform: rotate(-13deg);
   }
@@ -45,7 +46,7 @@
   .tag-line {
     position: relative;
     text-align: center;
-    margin: .5em 0 1em 2em;
+    margin: 0.5em 0 1em 2em;
   }
 
   .tag-wrapper {
@@ -54,7 +55,7 @@
     position: relative;
     right: 1em;
     width: 32em;
-    height:13em;
+    height: 13em;
     display: flex;
     align-items: center;
     text-align: center;

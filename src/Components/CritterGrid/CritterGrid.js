@@ -25,8 +25,7 @@ export const CritterGrid = () => {
       .catch((error) => {
         if (error instanceof Error) {
           setError("Server error.");
-        } 
-        else {
+        } else {
           setError("Unknown error.");
         }
       });
@@ -40,8 +39,7 @@ export const CritterGrid = () => {
       .catch((error) => {
         if (error instanceof Error) {
           setError("Server error.");
-        } 
-        else {
+        } else {
           setError("Unknown error.");
         }
       });
@@ -55,26 +53,49 @@ export const CritterGrid = () => {
       .catch((error) => {
         if (error instanceof Error) {
           setError("Server error.");
-        } 
-        else {
+        } else {
           setError("Unknown error.");
         }
       });
   }, []);
-  
-  if(error) {
-    return(
-      <Redirect to="/error" />
-    )}
-   else {
+
+  if (error) {
+    return <Redirect to="/error" />;
+  } else {
     return (
       <div className="critter-grid">
-        <Form setShowBugs={setShowBugs} setShowFish={setShowFish} 
-        setShowSeaCreatures={setShowSeaCreatures} setShowMissing={setShowMissing} setSort={setSort} />
-        { showBugs && <Critters sort={sort} type="Bugs" showMissing={showMissing} critters={bugs} />}
-        { showFish && <Critters sort={sort} type="Fish" showMissing={showMissing} critters={fish}/>}
-        { showSeaCreatures && <Critters sort={sort} type="Sea Creatures" showMissing={showMissing} critters={sea}/>}
+        <Form
+          setShowBugs={setShowBugs}
+          setShowFish={setShowFish}
+          setShowSeaCreatures={setShowSeaCreatures}
+          setShowMissing={setShowMissing}
+          setSort={setSort}
+        />
+        {showBugs && (
+          <Critters
+            sort={sort}
+            type="Bugs"
+            showMissing={showMissing}
+            critters={bugs}
+          />
+        )}
+        {showFish && (
+          <Critters
+            sort={sort}
+            type="Fish"
+            showMissing={showMissing}
+            critters={fish}
+          />
+        )}
+        {showSeaCreatures && (
+          <Critters
+            sort={sort}
+            type="Sea Creatures"
+            showMissing={showMissing}
+            critters={sea}
+          />
+        )}
       </div>
-    )
-   }
-}
+    );
+  }
+};

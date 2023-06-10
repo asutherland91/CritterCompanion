@@ -1,72 +1,71 @@
 .image-wrapper {
   border-radius: 100px;
-  background-color: #FDF5C4;
+  background-color: #fdf5c4;
   border: 2px solid #b6b08d;
   box-shadow: 1px 1px 1px black;
   height: 7em;
   width: 7em;
+}
+
+.image {
+  height: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #8bd5d3;
+  height: 13em;
+  width: 13em;
+  margin: 1em;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.name {
+  font-size: 1em;
+  margin-top: 0.5em;
+  text-align: center;
+  color: #525252;
+}
+
+.collected {
+  box-shadow: none;
+  border: none;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+  font-family: "Kosugi Maru", sans-serif;
+}
+
+.fade {
+  opacity: 0.75;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .image-wrapper {
+    height: 6em;
+    width: 6em;
   }
 
   .image {
-    height: 7em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 6em;
   }
 
   .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #8bd5d3;
-    height: 13em;
-    width: 13em;
+    height: 12em;
+    width: 10.25em;
     margin: 1em;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px black;
   }
 
   .name {
-    font-size: 1em;
-    margin-top: .5em;
-    text-align: center;
-    color: #525252;
+    font-size: 0.9em;
   }
-
-  .collected {
-    box-shadow: none;
-    border: none;
-    margin-top:.5em;
-    padding: .5em 1em;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px black;
-    font-family: 'Kosugi Maru', sans-serif;
-  }
-
-  .fade {
-    opacity: 0.75;
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  @media (max-width: 600px) {
-    .image-wrapper {
-      height: 6em;
-      width: 6em;
-
-    }
-  
-    .image {
-      height: 6em;
-    }
-  
-    .icon {
-      height: 12em;
-      width: 10.25em;
-      margin: 1em;
-    }
-  
-    .name {
-      font-size: .9em;
-    }
-  }
+}

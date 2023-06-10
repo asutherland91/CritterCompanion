@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
-html, body { 
-  height: 100%; 
-  font-family: 'Kosugi Maru', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+html,
+body {
+  height: 100%;
+  font-family: "Kosugi Maru", sans-serif;
 }
 
 .critter-main {
   background-image: url("../../Assets/facebackgrounds.png");
+  height: auto;
+  min-height: 100vh;
 }
 
 .details-main {
   background-image: url("../../Assets/lady-red-21.jpg");
   height: 100%;
   background-size: cover;
-}
-
-#root {
-  height: 100%
 }

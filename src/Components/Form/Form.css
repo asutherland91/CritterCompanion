@@ -16,7 +16,7 @@
 }
 
 .form-checkbox-label {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 .form-checkbox {
@@ -24,13 +24,13 @@
 }
 
 .form-label {
-  font-size: .95em;
+  font-size: 0.95em;
 }
 
 .form-sort {
-  margin-left: .5em;
+  margin-left: 0.5em;
   border-radius: 4px;
-  padding: .25em
+  padding: 0.25em;
 }
 
 @media screen and (max-width: 600px) {
