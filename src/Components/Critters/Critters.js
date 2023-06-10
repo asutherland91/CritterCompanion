@@ -9,7 +9,7 @@ export const Critters = ({ critters, type, sort, showMissing }) => {
   );
   useEffect(() => {
     localStorage.setItem(`Collected-${type}`, JSON.stringify(collected));
-  }, [collected]);
+  }, [collected, type]);
   const critterIcons = critters
     .filter((critter) => {
       if (showMissing) {
@@ -25,6 +25,8 @@ export const Critters = ({ critters, type, sort, showMissing }) => {
         return a["file-name"] < b["file-name"] ? -1 : 1;
       } else if (sort === "Price") {
         return b.price - a.price;
+      } else {
+        return [];
       }
     })
     .map((critter) => {

@@ -14,5 +14,6 @@ body {
 .details-main {
   background-image: url("../../Assets/lady-red-21.jpg");
   height: 100vh;
+  min-height:100vh;
   background-size: cover;
 }

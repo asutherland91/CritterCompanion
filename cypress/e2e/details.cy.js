@@ -24,6 +24,7 @@ describe("Details User Flows", () => {
       }).as("sea");
 
       cy.get(".logo").click();
+      cy.wait(["@bugs", "@fish", "@sea"])
       cy.location("pathname").should("eq", "/");
     });
 
@@ -55,6 +56,7 @@ describe("Details User Flows", () => {
       cy.intercept("GET", "https://acnhapi.com/v1a/Bugs/1", {
         statusCode: 500,
       }).as("critters");
+
       cy.visit("localhost:3000/Bugs/1");
       cy.wait("@critters");
     });

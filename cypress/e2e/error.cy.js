@@ -2,16 +2,18 @@ describe("ErrorPage", () => {
   beforeEach(() => {
     cy.intercept("GET", "https://acnhapi.com/v1a/bugs/", {
       statusCode: 500,
-    });
+    }).as("bugs");
 
     cy.intercept("GET", "https://acnhapi.com/v1a/fish/", {
       statusCode: 500,
-    });
+    }).as("fish");
 
     cy.intercept("GET", "https://acnhapi.com/v1a/sea/", {
       statusCode: 500,
-    });
+    }).as("sea");
+
     cy.visit("localhost:3000");
+    cy.wait(["@bugs", "@fish", "@sea"]);
   });
 
   it("should display the error message correctly", () => {
