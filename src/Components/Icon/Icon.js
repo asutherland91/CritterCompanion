@@ -19,14 +19,14 @@ export const Icon = ({ id, image, name, setCollected, type, collected, selected 
   let critterName = name.replaceAll("_", ' ')
 
   return(
-    <div id={id} className={`icon ${selected ? "fade" : ""}`}>
+    <div id={type + id} className={`icon ${selected ? "fade" : ""}`}>
       <h2 className="name">{critterName}</h2>
       <NavLink className="critter-icon-nav" key={id} to={`${type.replaceAll(" ", "")}/${id}`} >
         <div className="image-wrapper">
           <img className="image" src={image} alt={name}/>
         </div>
       </NavLink>
-      <button className="collected" onClick={handleClick}>
+      <button id={type + id + "button"} className="collected" onClick={handleClick}>
         {!selected ? "Got It!" : "Don't Got It!"}
       </button>
     </div>
