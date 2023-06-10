@@ -1,0 +1,301 @@
+[
+  {
+  "id": 1,
+  "file-name": "common_butterfly",
+  "name": {},
+  "availability": {
+  "month-northern": "9-6",
+  "month-southern": "3-12",
+  "time": "4am - 7pm",
+  "isAllDay": false,
+  "isAllYear": false,
+  "location": "Flying",
+  "rarity": "Common",
+  "month-array-northern": [
+  9,
+  10,
+  11,
+  12,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+  ],
+  "month-array-southern": [],
+  "time-array": []
+  },
+  "price": 160,
+  "price-flick": 240,
+  "catch-phrase": "I caught a common butterfly! They often flutter by!",
+  "museum-phrase": "The common butterfly would have you believe it is but a beautiful friend flitting prettily about the flowers. Bah, I say! They may seem innocent things with their pretty white wings, but they hide a dark side! The common butterfly caterpillar is called a cabbage worm, you see, and it's a most voracious pest. The ravenous beasts chew through cabbage, broccoli, kale and the like with a devastating gusto. And my feathers! Their green coloring is truly GROSS! A hoo-rrific hue, I say.",
+  "image_uri": "https://acnhapi.com/v1/images/bugs/1",
+  "icon_uri": "https://acnhapi.com/v1/icons/bugs/1"
+  },
+  {
+  "id": 2,
+  "file-name": "yellow_butterfly",
+  "name": {},
+  "availability": {
+  "month-northern": "3-6 & 9-10",
+  "month-southern": "9-12 & 3-4",
+  "time": "4am - 7pm",
+  "isAllDay": false,
+  "isAllYear": false,
+  "location": "Flying",
+  "rarity": "Common",
+  "month-array-northern": [
+  3,
+  4,
+  5,
+  6,
+  9,
+  10
+  ],
+  "month-array-southern": [],
+  "time-array": []
+  },
+  "price": 160,
+  "price-flick": 240,
+  "catch-phrase": "I caught a yellow butterfly! Shouldn't all BUTTERflies be yellow?",
+  "museum-phrase": "Allow me to enlighten you... The yellow butterfly is named for its yellow wings. Need I say more? If I must, then allow me to note that the female yellow butterfly can lay up to 600 eggs at a time! Bleech! And their creepy crawly caterpillars just love to chomp on clover plants. A recipe for disaster, I say. Just imagine reaching for a four-leaf clover, only to touch a larva instead! Yuck! The worst of luck!",
+  "image_uri": "https://acnhapi.com/v1/images/bugs/2",
+  "icon_uri": "https://acnhapi.com/v1/icons/bugs/2"
+  },
+  {
+  "id": 3,
+  "file-name": "tiger_butterfly",
+  "name": {},
+  "availability": {
+  "month-northern": "3-9",
+  "month-southern": "9-3",
+  "time": "4am - 7pm",
+  "isAllDay": false,
+  "isAllYear": false,
+  "location": "Flying",
+  "rarity": "Common",
+  "month-array-northern": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+  ],
+  "month-array-southern": [],
+  "time-array": []
+  },
+  "price": 240,
+  "price-flick": 360,
+  "catch-phrase": "I caught a tiger butterfly! I've earned my stripes!",
+  "museum-phrase": "Tiger butterflies are known for their majestic wings, which many consider quite beautiful. Truth be told, I find them monstrous! Those strange striped patterns... They give this owl the goose bumps! And while you may imagine young tiger butterfly larvae to look like lovely green caterpillars...it's not so! Why, when tiger butterflies are but babes, they're covered in unsightly white, brown, and black spots. In this way, they camouflage themselves as...as...bird droppings! Putrid pests, indeed!",
+  "image_uri": "https://acnhapi.com/v1/images/bugs/3",
+  "icon_uri": "https://acnhapi.com/v1/icons/bugs/3"
+  },
+  {
+  "id": 4,
+  "file-name": "peacock_butterfly",
+  "name": {},
+  "availability": {
+  "month-northern": "3-6",
+  "month-southern": "9-12",
+  "time": "4am - 7pm",
+  "isAllDay": false,
+  "isAllYear": false,
+  "location": "Flying near hybrid flowers",
+  "rarity": "Uncommon",
+  "month-array-northern": [
+  3,
+  4,
+  5,
+  6
+  ],
+  "month-array-southern": [],
+  "time-array": []
+  },
+  "price": 2500,
+  "price-flick": 3750,
+  "catch-phrase": "I caught a peacock butterfly! Now it's my turn to strut my stuff!",
+  "museum-phrase": "Pretty as a peacock? Bah, I say! The wings of the peacock butterfly may have a pattern similar to that of the beautiful bird... But its forewings are also often covered in a dark, velvety hair! You heard right! HAIRY wings! A hair-raising revelation indeed!",
+  "image_uri": "https://acnhapi.com/v1/images/bugs/4",
+  "icon_uri": "https://acnhapi.com/v1/icons/bugs/4"
+  },
+  {
+  "id": 5,
+  "file-name": "common_bluebottle",
+  "name": {},
+  "availability": {
+  "month-northern": "4-8",
+  "month-southern": "9-2",
+  "time": "4am - 7pm",
+  "isAllDay": false,
+  "isAllYear": false,
+  "location": "Flying",
+  "rarity": "Common",
+  "month-array-northern": [],
+  "month-array-southern": [],
+  "time-array": []
+  },
+  "price": 300,
+  "price-flick": 450,
+  "catch-phrase": "I caught a common bluebottle! I'll put it in a rare green jar!",
+  "museum-phrase": "The common bluebottle is a type of swallowtail butterfly with a bright blue line running down its wings. They fly quite nimbly, it seems, and are thus quite difficult to catch. But seeing how they've been known to slurp nutrients from MUD puddles... I simply CAN'T imagine wanting to catch one myself. What awful breath!",
+  "image_uri": "https://acnhapi.com/v1/images/bugs/5",
+  "icon_uri": "https://acnhapi.com/v1/icons/bugs/5"
+  },
+  {
+  "id": 6,
+  "file-name": "paper_kite_butterfly",
+  "name": {},
+  "availability": {
+  "month-northern": "",
+  "month-southern": "",
+  "time": "8am - 7pm",
+  "isAllDay": false,
+  "isAllYear": true,
+  "location": "Flying",
+  "rarity": "Common",
+  "month-array-northern": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12
+  ],
+  "month-array-southern": [],
+  "time-array": []
+  },
+  "price": 1000,
+  "price-flick": 1500,
+  "catch-phrase": "I caught a paper kite butterfly! Do I read it, fly it, or spreadit on toast?",
+  "museum-phrase": "With its black-and-white-striped wing pattern, the paper kite butterfly is both elegant and pretty... PRETTY POISONOUS I MEAN! Hoo dear! Where was I? Oh yes... Even this butterfly's black-and-white-striped larva and little golden pupae are toxic to predators. Indeed, the paper kite butterfly's foul flavor is famous, and thus birds, in particular, steer clear of the fiends. THIS bird most of all!",
+  "image_uri": "https://acnhapi.com/v1/images/bugs/6",
+  "icon_uri": "https://acnhapi.com/v1/icons/bugs/6"
+  },
+  {
+  "id": 7,
+  "file-name": "great_purple_emperor",
+  "name": {},
+  "availability": {
+  "month-northern": "5-8",
+  "month-southern": "11-2",
+  "time": "4am - 7pm",
+  "isAllDay": false,
+  "isAllYear": false,
+  "location": "Flying",
+  "rarity": "Rare",
+  "month-array-northern": [
+  5,
+  6,
+  7,
+  8
+  ],
+  "month-array-southern": [],
+  "time-array": []
+  },
+  "price": 3000,
+  "price-flick": 4500,
+  "catch-phrase": "I caught a great purple emperor! Its purple reign is over now!",
+  "museum-phrase": "The great purple emperor lives high in the treetops and is renowned for its pretty purple-hued wings. Its impressive bird-like wingspan and elusive nature have made it a favorite among butterfly aficionados. But truth be told, the so-called great purple emperor has some not-so-great personal peculiarities. For one...it has two horrid HORNS upon its head when it is in its caterpillar form. For two...it has been known to dine on feces and animal carcasses! Hoo! That's why I call it the Emperor of EWWW!",
+  "image_uri": "https://acnhapi.com/v1/images/bugs/7",
+  "icon_uri": "https://acnhapi.com/v1/icons/bugs/7"
+  },
+  {
+  "id": 8,
+  "file-name": "monarch_butterfly",
+  "name": {},
+  "availability": {
+  "month-northern": "9-11",
+  "month-southern": "3-5",
+  "time": "4am - 5pm",
+  "isAllDay": false,
+  "isAllYear": false,
+  "location": "Flying",
+  "rarity": "Common",
+  "month-array-northern": [
+  9,
+  10,
+  11
+  ],
+  "month-array-southern": [],
+  "time-array": []
+  },
+  "price": 140,
+  "price-flick": 210,
+  "catch-phrase": "I caught a monarch butterfly! Guess the butterflies are a democracy now!",
+  "museum-phrase": "Did you know the monarch butterfly migrates south for the winter and returns north for the summer? Indeed, these horrid orange beasties do not tolerate the cold and travel 3,000 miles to escape the winter. During the journey, they cluster together in trees by the thousands just to stay warm. Imagine! Hordes of the foul flittering fiends huddled together in one place! If only they'd put on tiny coats instead.",
+  "image_uri": "https://acnhapi.com/v1/images/bugs/8",
+  "icon_uri": "https://acnhapi.com/v1/icons/bugs/8"
+  },
+  {
+  "id": 9,
+  "file-name": "emperor_butterfly",
+  "name": {},
+  "availability": {
+  "month-northern": "6-9 & 12-3",
+  "month-southern": "6-9 & 12-3",
+  "time": "5pm - 8am",
+  "isAllDay": false,
+  "isAllYear": false,
+  "location": "Flying",
+  "rarity": "Uncommon",
+  "month-array-northern": [
+  6,
+  7,
+  8,
+  9,
+  12,
+  1,
+  2,
+  3
+  ],
+  "month-array-southern": [],
+  "time-array": []
+  },
+  "price": 4000,
+  "price-flick": 6000,
+  "catch-phrase": "I caught an emperor butterfly! It's not your average monarch!",
+  "museum-phrase": "The emperor butterfly is called the jewel of the forest. But its vivid blue hue... Ewww, let me tell you! The color does not come from a dye, but rather from light reflecting off layers of translucent scales. Yes, butterfly wings are covered in tiny scales! SCALES! Butterfly? Bah! More like snake of the sky!",
+  "image_uri": "https://acnhapi.com/v1/images/bugs/9",
+  "icon_uri": "https://acnhapi.com/v1/icons/bugs/9"
+  },
+  {
+  "id": 10,
+  "file-name": "agrias_butterfly",
+  "name": {},
+  "availability": {
+  "month-northern": "4-9",
+  "month-southern": "10-3",
+  "time": "8am - 5pm",
+  "isAllDay": false,
+  "isAllYear": false,
+  "location": "Flying",
+  "rarity": "Uncommon",
+  "month-array-northern": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+  ],
+  "month-array-southern": [],
+  "time-array": []
+  },
+  "price": 3000,
+  "price-flick": 4500,
+  "catch-phrase": "I caught an agrias butterfly! I wonder if it finds me disagrias-able?",
+  "museum-phrase": "Some say the agrias butterfly is one of the most beautiful butterflies in the world. Bah, I say! BAH! They may have brightly colored wings, but the way they flutter and flitter...SO FOUL! In fact, the agrias butterfly flies so fast, it is quite a feat to catch one. I suppose I should congratulate you on your good fortune... But catching any bug seems a misfortune to me.",
+  "image_uri": "https://acnhapi.com/v1/images/bugs/10",
+  "icon_uri": "https://acnhapi.com/v1/icons/bugs/10"
+  }
+]
