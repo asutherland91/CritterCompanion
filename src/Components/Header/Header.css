@@ -54,7 +54,7 @@
     background-color: rgba(255, 255, 255, 0);
     position: relative;
     right: 1em;
-    width: 32em;
+    width: auto;
     height: 13em;
     display: flex;
     align-items: center;

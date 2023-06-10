@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Critters.css";
 import { Icon } from "../Icon/Icon";
 import PropTypes from "prop-types";
 
 export const Critters = ({ critters, type, sort, showMissing }) => {
-  const [collected, setCollected] = useState([]);
+  const [collected, setCollected] = useState(
+    JSON.parse(localStorage.getItem(`Collected-${type}`)) || []
+  );
+  useEffect(() => {
+    localStorage.setItem(`Collected-${type}`, JSON.stringify(collected));
+  }, [collected]);
   const critterIcons = critters
     .filter((critter) => {
       if (showMissing) {
