@@ -4,21 +4,23 @@ export const cleanCritterData = (critterData) => {
     .map((critter) => {
       return {
         ...critter,
-        "file-name": formatName(critter["file-name"])
+        "file-name": formatName(critter["file-name"]),
       };
     });
 };
 
 export const cleanCritterDetailsData = (critterData) => {
-  if(critterData.id && critterData["file-name"]) {
+  if (critterData.id && critterData["file-name"]) {
     return {
       ...critterData,
       "file-name": formatName(critterData["file-name"]),
-      "month-available": formatAvailability(critterData.availability["month-array-northern"]),
-      "time-available": formatTime(critterData.availability["time"])
+      "month-available": formatAvailability(
+        critterData.availability["month-array-northern"]
+      ),
+      "time-available": formatTime(critterData.availability["time"]),
     };
   }
-}
+};
 
 const formatName = (name) => {
   return name
@@ -41,7 +43,7 @@ const formatAvailability = (monthArray) => {
     "September",
     "October",
     "November",
-    "December"
+    "December",
   ];
 
   const formattedMonths = monthArray.map((month) => {
@@ -55,10 +57,9 @@ const formatAvailability = (monthArray) => {
 };
 
 const formatTime = (time) => {
-  if(time === "") {
-    return "All Day"
-  }
-  else {
+  if (time === "") {
+    return "All Day";
+  } else {
     return time;
   }
-}
+};

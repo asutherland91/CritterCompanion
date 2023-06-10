@@ -4,10 +4,9 @@ import { Details } from "../Details/Details";
 import { Header } from "../Header/Header";
 import { ErrorPage } from "../ErrorPage/ErrorPage";
 import "./App.css";
-import { Route, Switch, Redirect} from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 const App = () => {
-
   return (
     <Switch>
       <Route exact path="/">
@@ -23,13 +22,12 @@ const App = () => {
         </main>
       </Route>
       <Route exact path="/error">
-        <ErrorPage/>
+        <ErrorPage />
       </Route>
       <Route path="*">
         <Redirect to="/error" />
       </Route>
     </Switch>
-   
   );
 };
 

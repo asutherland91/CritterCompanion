@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Form.css";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-export const Form = ({setShowBugs, setShowFish, setShowSeaCreatures, setShowMissing, setSort}) => {
-
- return (
+export const Form = ({
+  setShowBugs,
+  setShowFish,
+  setShowSeaCreatures,
+  setShowMissing,
+  setSort,
+}) => {
+  return (
     <form className="form">
       <div className="form-column">
         <div className="form-checkbox-label">
@@ -73,7 +78,8 @@ export const Form = ({setShowBugs, setShowFish, setShowSeaCreatures, setShowMiss
               className="form-sort"
               onChange={(event) => {
                 setSort(event.target.value);
-            }}>
+              }}
+            >
               <option value="Default">Default</option>
               <option value="Name">Name</option>
               <option value="Price">Price</option>
@@ -90,5 +96,5 @@ Form.propTypes = {
   setShowFish: PropTypes.func,
   setShowSeaCreatures: PropTypes.func,
   setShowMissing: PropTypes.func,
-  setSort: PropTypes.func
+  setSort: PropTypes.func,
 };

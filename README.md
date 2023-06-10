@@ -1,70 +1,52 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Critter Companion
+## Table of Contents
+  - [Introduction](#Introduction)
+  - [Technologies](#Technologies)
+  - [Contributors](#Contributors)
+  - [Illustrations](#Illustrations)
+  - [Deployed Page](#Deployed-Page)
+  - [Wins](#Wins)
+  - [Challenges & Improvements](#Challenges-&-Improvements)
+  - [Set Up](#Set-Up)
+  - [Sources](#Sources)
+## Introduction
+Welcome to Critter Companion an application designed to track the critters you have caught and all the ones you are still looking for in Animal Crossing: New Horizons. It provides information about critter availability, value, and the time of day/year they can be found. With this application, users can easily identify which critters they are missing from their collection and information to help find them.
+## Technologies
+  - React
+  - React Router
+  - CSS & JSX
+  - Webpack module bundler
+  - Cypress end-to-end testing framework
+  - Postman (for API request testing)
+  - GitHub Projects
+## Contributors
+  - [Adriane Sutherland](https://github.com/asutherland91)
+## Illustrations
+![App](gotta put a new link here)
+## Deployed Page
+Visit our deployed
+## Wins
+- Successfully incorporated and leveraged data from an unfamiliar API to enrich the application's capabilities.
+- Skillfully devised and adhered to user stories, ensuring that the features met the needs of our intended users.
+- Thoroughly examined user flows through comprehensive testing, implementing robust error handling mechanisms to handle any potential issues.
+- Worked quickly and efficently in order to produce a well-rounded and clean application.
+## Challenges & Improvements
+- Cypress testing was certainly my biggest challenge, but I did successfully and thoroughly test my application.
+  - Possible future improvements and features:
+    - Incorperate better responsiveness to allow for clean usage on many devices of different sizes.
+    - Adding in the ability to choose what hemisphere the user resides in and have the update the critters avaliability times.
+    - Allowing users to be able to sort out what creatures are available at the time as a list rather than searching each critter for its availability.
+## Set Up
+1. Fork the repository to your GitHub account.
+2. Copy the SSH key from GitHub by navigating to the code dropdown.
+3. Using the terminal, run the following command: `git clone [SSH key here]`.
+4. Change into the repository directory: `cd critter-companion`.
+5. Open the repository in your preferred code editor, such as Visual Studio Code.
+6. Install the necessary dependencies by running: `npm install`.
+7. Start the application by running: `npm start`.
+8. Click the hyperlink where the project is running to launch the application in your web browser, or enter `http://localhost:3000/` into your web browser's address bar.
+## Sources
+  - [MDN](http://developer.mozilla.org/en-US/)
+  - [W3Schools](https://www.w3schools.com/)
+  - [React Docs](https://reactjs.org/docs/getting-started.html)
+  - [Cypress Docs](https://docs.cypress.io/guides/overview/why-cypress.html)
