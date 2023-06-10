@@ -12,7 +12,7 @@ export const Form = ({setShowBugs, setShowFish, setShowSeaCreatures, setShowMiss
             Show Missing Critters
             <input
               type="checkbox"
-              className="form-checkbox"
+              className="form-checkbox show-missing"
               defaultChecked={false}
               name="missing-critters"
               onChange={(event) => {
@@ -26,7 +26,7 @@ export const Form = ({setShowBugs, setShowFish, setShowSeaCreatures, setShowMiss
             Show Bugs
             <input
               type="checkbox"
-              className="form-checkbox"
+              className="form-checkbox show-bugs"
               defaultChecked={true}
               name="bugs"
               onChange={(event) => {
@@ -40,7 +40,7 @@ export const Form = ({setShowBugs, setShowFish, setShowSeaCreatures, setShowMiss
             Show Fish
             <input
               type="checkbox"
-              className="form-checkbox"
+              className="form-checkbox show-fish"
               defaultChecked={true}
               name="fish"
               onChange={(event) => {
@@ -54,7 +54,7 @@ export const Form = ({setShowBugs, setShowFish, setShowSeaCreatures, setShowMiss
             Show Sea Creatures
             <input
               type="checkbox"
-              className="form-checkbox"
+              className="form-checkbox show-sea"
               defaultChecked={true}
               name="sea-creatures"
               onChange={(event) => {

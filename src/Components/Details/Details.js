@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Details.css";
 import { fetchSpecificCritter } from "../../APICalls/APICalls";
 import { useParams, Redirect } from "react-router-dom";
-import PropTypes from 'prop-types'
 import { cleanCritterDetailsData } from "../../APICalls/utilities";
 
 export const Details = () => {
@@ -24,7 +23,7 @@ export const Details = () => {
           setError("Unknown error.");
         }
       });
-  }, []);
+  });
  if(error) {
   return(
     <Redirect to="/error" />
@@ -36,10 +35,11 @@ export const Details = () => {
         <div className="detail-image-wrapper">
           <img className="detail-image" src={critter["image_uri"]} alt={critter["file-name"]}/>
           <div className="details">
-            <p>Location: {critter.availability.location}! </p>
-            <p>Price: {critter.price} Bells! </p>
-            <p>Rarity: {critter.availability.rarity}! </p>
-            <p>Months available: {critter["month-available"]}! </p>
+            <p className="location">Location: {critter.availability.location}! </p>
+            <p className="price">Price: {critter.price} Bells! </p>
+            <p className="rarity">Rarity: {critter.availability.rarity}! </p>
+            <p className="month">Months found: {critter["month-available"]}! </p>
+            <p className="time">Time found: {critter["time-available"]}</p>
           </div>
         </div>
         <h3 className="catch-phrase">{critter["catch-phrase"]}</h3>
