@@ -20,11 +20,11 @@ Welcome to Critter Companion an application designed to track the critters you h
   - Postman (for API request testing)
   - GitHub Projects
 ## Contributors
-  - [Adriane Sutherland](https://github.com/asutherland91)
+  - Adriane Sutherland - [GitHub](https://github.com/asutherland91) [LinkedIn](https://www.linkedin.com/in/adrianesutherland/)
 ## Illustrations
-![App](gotta put a new link here)
+![App](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWMxNThiYTA5NDU2NjQ2MWYyMWJjZTBmOTI1OTA2ZWZkZjViYmVmNCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/363PElrmWhplK1YTF3/giphy.gif)
 ## Deployed Page
-Visit our deployed
+Visit our deployed [Critter Companion](https://critter-companion-pi.vercel.app/)
 ## Wins
 - Successfully incorporated and leveraged data from an unfamiliar API to enrich the application's capabilities.
 - Skillfully devised and adhered to user stories, ensuring that the features met the needs of our intended users.
