@@ -30,7 +30,7 @@ Visit our deployed [Critter Companion](https://critter-companion-pi.vercel.app/)
 - Skillfully devised and adhered to user stories, ensuring that the features met the needs of our intended users.
 - Thoroughly examined user flows through comprehensive testing, implementing robust error handling mechanisms to handle any potential issues.
 - Worked quickly and efficently in order to produce a well-rounded and clean application.
--Implemented local storage so that changes persist through seperate visits to the application.
+- Implemented local storage so that changes persist through separate visits to the application.
 ## Challenges & Improvements
 - Cypress testing was certainly my biggest challenge, but I did successfully and thoroughly test my application.
   - Possible future improvements and features:
