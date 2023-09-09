@@ -12,7 +12,7 @@ export const Details = () => {
   useEffect(() => {
     fetchSpecificCritter(type, id)
       .then((critterData) => {
-        setCritterData(cleanCritterDetailsData(critterData));
+        setCritterData(critterData);
       })
       .catch((error) => {
         if (error instanceof Error) {
@@ -26,27 +26,28 @@ export const Details = () => {
     return <Redirect to="/error" />;
   } else if (critter) {
     return (
-      <div id={critter.id} className="details-wrapper">
-        <h2 className="detail-name">{critter["file-name"]}</h2>
+      <div id={critter.number} className="details-wrapper">
+        <h2 className="detail-name">{critter["name"]}</h2>
         <div className="detail-image-wrapper">
           <img
             className="detail-image"
-            src={critter["image_uri"]}
-            alt={critter["file-name"]}
+            src={critter["render_url"]}
+            alt={critter["name"]}
           />
           <div className="details">
             <p className="location">
-              Location: {critter.availability.location}!{" "}
+              Location: {critter.location}!{" "}
             </p>
-            <p className="price">Price: {critter.price} Bells! </p>
-            <p className="rarity">Rarity: {critter.availability.rarity}! </p>
+            <p className="price">Sell Price to Nooklings: {critter.nook_sell} Bells! </p>
+            <p className="price"> Sell Price to CJ: {critter.nook_sell} Bells! </p>
+            {/* <p className="rarity">Rarity: {critter.rarity}! </p> */}
             <p className="month">
-              Months found: {critter["month-available"]}!{" "}
+              Months found: {critter.north.months}!{" "}
             </p>
-            <p className="time">Time found: {critter["time-available"]}</p>
+            {/* <p className="time">Time found: {critter.north.availability_array[time]}</p> */}
           </div>
         </div>
-        <h3 className="catch-phrase">{critter["catch-phrase"]}</h3>
+        <h3 className="catch-phrase">{critter["catchphrases"]}</h3>
       </div>
     );
   } else {
