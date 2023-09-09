@@ -74,7 +74,7 @@ export const CritterGrid = () => {
         {showBugs && (
           <Critters
             sort={sort}
-            type="Bugs"
+            type="bugs"
             showMissing={showMissing}
             critters={bugs}
           />
@@ -82,7 +82,7 @@ export const CritterGrid = () => {
         {showFish && (
           <Critters
             sort={sort}
-            type="Fish"
+            type="fish"
             showMissing={showMissing}
             critters={fish}
           />
@@ -90,7 +90,7 @@ export const CritterGrid = () => {
         {showSeaCreatures && (
           <Critters
             sort={sort}
-            type="Sea Creatures"
+            type="sea"
             showMissing={showMissing}
             critters={sea}
           />

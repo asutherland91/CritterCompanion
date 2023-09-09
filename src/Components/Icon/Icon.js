@@ -29,7 +29,7 @@ export const Icon = ({
       <NavLink
         className="critter-icon-nav"
         key={id}
-        to={`${type.replaceAll(" ", "")}/${id}`}
+        to={`${type.replaceAll(" ", "")}/${name.replaceAll(" ", "_")}`}
       >
         <div className="image-wrapper">
           <img className="image" src={image} alt={name} />
